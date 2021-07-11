@@ -15,7 +15,7 @@ class AutenticadorMiddleware
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if(str_replace('Basic ', '', $request->header('Authorization')) === env('MY_TOKEN')) {
+        if(str_replace('Basic ', '', $request->header('Authorization')) === 'cmVuYW5zeGRldkBnbWFpbC5jb206MTIzNDU2Nzg5') {
             return $next($request);
         } else {
             return response('Unauthorized.', 401);
