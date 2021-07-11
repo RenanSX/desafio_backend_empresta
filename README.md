@@ -28,6 +28,12 @@ Curl Extension
 GD Extension
 ```
 
+### Criando arquivo .env
+
+```
+sudo cp -rp .env.example .env
+```
+
 ### Comandos básicos para iniciar o projeto
 
 Comandos principais
