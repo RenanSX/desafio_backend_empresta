@@ -59,7 +59,24 @@ As rotas são autenticadas por um Basic, para conseguir o token entrar em contat
 https://www.getpostman.com/collections/9e07dcb77bb33bf929d3
 ```
 
-### Validação da rota/credito/disponivel
+### Servidor local e Rotas
+
+Para iniciar o servidor de desenvolvimento do Laravel, basta rodar o comando abaixo.
+Por padrão vem configurado para ser executado no host localhost e na porta 8000. 
+Isso permite que você acesso sua aplicação Laravel através da url http://localhost:8000
+
+```
+php artisan serve
+```
+
+Rotas:
+```
+(GET) /api/convenios
+(GET) /api/instituicoes
+(POST) /api/credito/disponivel
+```
+
+### Validação da rota /credito/disponivel
 
 ```
 valor_emprestimo: mínimo 1, máximo 9999.90, aceita o ponto e duas casas depois do ponto | campo obrigatório
